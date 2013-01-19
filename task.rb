@@ -27,8 +27,6 @@ def modify class_name
        class_name.send :define_method, :today do
        puts "Hello world!"
        end
-     else
-     raise NoMethodError, "Method not found #{method_name}"
    end
 end 
 
