@@ -9,9 +9,7 @@ class Car
       end       
       def engine_info
          a = "#{size}"
-         if a.length<2
-            a = a + '.0'
-         end        
+         a = a + '.0' if a.length<2      
          "#{a} #{'turbo' if turbo} #{engine.capitalize} engine"
       end 
  end
